@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Organizer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Organizer_jar</output-path>
+    <root id="archive" name="Organizer.jar">
+      <element id="module-output" name="Organizer" />
+    </root>
+  </artifact>
+</component>

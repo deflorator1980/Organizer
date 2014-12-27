@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><clients>
+
+    <customer id="1">
+        <post>post5</post>
+        <name>Name1</name>
+        <company>Company3</company>
+        <email>email1</email>
+        <phones>
+            <phone>1111</phone>
+            <phone>4111</phone>
+        </phones>
+    </customer>
+
+    
+
+
+    <customer id="4">
+        <post>post2</post>
+        <name>Yasha</name>
+        <company>Company6</company>
+        <email>email4</email>
+        <phones>
+            <phone>53</phone>
+            <phone>1234</phone>
+        </phones>
+    </customer>
+
+
+    <customer id="8">
+        <post>cpost</post>
+        <name>kui2</name>
+        <company>kcompany3</company>
+        <email>cemail1</email>
+        <phones>
+            <phone>5678</phone>
+            <phone>9012</phone>
+            <phone>3456</phone>
+        </phones>
+    </customer>
+
+    <customer id="18">
+        <post>NoPost</post>
+        <name>NoName</name>
+        <company>NoCompany</company>
+        <email>NoEmail</email>
+        <phones>
+            <phone>+0987</phone>
+            <phone>+6543</phone>
+            <phone>+3210</phone>
+            <phone>+5555</phone>
+        </phones>
+    </customer>
+
+
+    <customer id="19">
+        <post>fuerer</post>
+        <name>Mister</name>
+        <company>NSDAP</company>
+        <email>at</email>
+        <phones>
+            <phone>911</phone>
+            <phone>116</phone>
+            
+            <phone>334</phone>
+        </phones>
+    </customer>
+
+    <customer id="20">
+        <name>Paul</name>
+        <post>reichsminister</post>
+        <company>NSDAP</company>
+        <email>hund</email>
+        <phones>
+            <phone>+7911</phone>
+            <phone>+7116</phone>
+            <phone>+7433</phone>
+            <phone>+7334</phone>
+        </phones>
+    </customer>
+
+    <customer id="21">
+        <name>Paul Joseph Goebbels</name>
+        <post>minister</post>
+        <company>Reich</company>
+        <email>nsdap@gmail.com</email>
+        <phones>
+            <phone>+4904</phone>
+            <phone>+4910</phone>
+            <phone>+4920</phone>
+        </phones>
+    </customer>
+
+    <customer id="22">
+        <name>Martin Lueter</name>
+        <post>priest</post>
+        <company>church</company>
+        <email>god@ya.ru</email>
+        <phones>
+            <phone>+4900</phone>
+            <phone>+4911</phone>
+            <phone>+49222</phone>
+        </phones>
+    </customer>
+
+    <customer id="23">
+        <name>Cain Velasques</name>
+        <post>fighter</post>
+        <company>UFC</company>
+        <email>cv@mail.ru</email>
+        <phones>
+            <phone>+5222</phone>
+            <phone>+5211</phone>
+        </phones>
+    </customer>
+
+    <customer id="24">
+        <name>Mitt Romney</name>
+        <post>Mormon</post>
+        <company>country</company>
+        <email>mr@yahoo.com</email>
+        <phones>
+            <phone>+1904</phone>
+            <phone>+1910</phone>
+        </phones>
+    </customer>
+</clients>
