@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><clients>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clients>
 
     <customer id="1">
         <post>post5</post>
@@ -10,8 +11,6 @@
             <phone>4111</phone>
         </phones>
     </customer>
-
-    
 
 
     <customer id="4">
@@ -60,7 +59,7 @@
         <phones>
             <phone>911</phone>
             <phone>116</phone>
-            
+
             <phone>334</phone>
         </phones>
     </customer>
@@ -102,25 +101,27 @@
         </phones>
     </customer>
 
-    <customer id="23">
-        <name>Cain Velasques</name>
-        <post>fighter</post>
-        <company>UFC</company>
-        <email>cv@mail.ru</email>
-        <phones>
-            <phone>+5222</phone>
-            <phone>+5211</phone>
-        </phones>
-    </customer>
 
     <customer id="24">
         <name>Mitt Romney</name>
         <post>Mormon</post>
-        <company>country</company>
+        <company>Tesla</company>
         <email>mr@yahoo.com</email>
         <phones>
             <phone>+1904</phone>
             <phone>+1910</phone>
+        </phones>
+    </customer>
+
+
+    <customer id="25">
+        <name>Ronda Rousey</name>
+        <post>fighter</post>
+        <company>MMA</company>
+        <email>rr@ya.ru</email>
+        <phones>
+            <phone>+124324</phone>
+            <phone>+18656</phone>
         </phones>
     </customer>
 </clients>

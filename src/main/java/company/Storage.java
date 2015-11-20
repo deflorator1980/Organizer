@@ -2,9 +2,7 @@ package company;
 
 import java.util.ArrayList;
 
-/**
- * Created by a on 23.12.2014.
- */
+
 public class Storage {
     public String id;
     public String name;

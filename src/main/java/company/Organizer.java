@@ -6,9 +6,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
 
-/**
- * Created by a on 24.12.2014.
- */
+
 public class Organizer {
     static boolean toWrite = false;
     static Executor exe;

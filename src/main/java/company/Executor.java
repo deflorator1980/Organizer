@@ -35,7 +35,7 @@ public class Executor {
     public void help() {
         System.out.println("\t-help\t\t\t\t\t\t\t\tвывод справки по командам органайзера");
         System.out.println("\t-insert <ФИО(в кавычках) должность организация email\n\t" +
-                " телефоны(если несколько в кавычках)>\t\t\t\tдобавить нового клиента\n");
+                " телефоны(если несколько в одних кавычках)>\t\t\t\tдобавить нового клиента\n");
         System.out.println("\t-update <id_клиента  поле значение >\t\t\t\tредактировать");
         System.out.println("\t-delete <id_клиента>\t\t\t\t\t\tудалить клиента");
         System.out.println("\t-delete [-ph id_клиента телефон]\t\t\t\t удалить телефон");
@@ -396,3 +396,4 @@ public class Executor {
         System.out.println("Written");
     }
 }
+
