@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><clients>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clients>
 
     <customer id="1">
         <post>post5</post>
@@ -120,7 +121,8 @@
         <email>rr@ya.ru</email>
         <phones>
             <phone>+124324</phone>
-            
+            <phone>+18656</phone>
+            <phone>+34234</phone>
         </phones>
     </customer>
 </clients>

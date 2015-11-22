@@ -18,7 +18,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-
 public class Executor {
     public Node clients;
     public Document doc;
@@ -87,16 +86,12 @@ public class Executor {
                         if ("phone".equals(phone.getNodeName())) {
 
                             phoneNumbers.add(phone.getTextContent());
-
                         }
                         storage.setPhones(phoneNumbers);
                     }
                 }
-
                 everyThing.add(storage);
-
             }
-
         }
 
         for (Storage st : everyThing) {
@@ -146,53 +141,33 @@ public class Executor {
                         if ("phone".equals(phone.getNodeName())) {
 
                             phoneNumbers.add(phone.getTextContent());
-
                         }
                         storage.setPhones(phoneNumbers);
                     }
                 }
-
                 everyThing.add(storage);
-
             }
-
         }
 
         switch (field) {
             case "name":
-                Collections.sort(everyThing, new Comparator<Storage>() {
-                    public int compare(Storage o1, Storage o2) {
-                        return o1.getName().toUpperCase()
-                                .compareTo(o2.getName().toUpperCase());
-                    }
-                });
+                Collections.sort(everyThing, (o1, o2) -> o1.getName().toUpperCase()
+                        .compareTo(o2.getName().toUpperCase()));
                 break;
 
             case "post":
-                Collections.sort(everyThing, new Comparator<Storage>() {
-                    public int compare(Storage o1, Storage o2) {
-                        return o1.getPost().toUpperCase()
-                                .compareTo(o2.getPost().toUpperCase());
-                    }
-                });
+                Collections.sort(everyThing, (o1, o2) -> o1.getPost().toUpperCase()
+                        .compareTo(o2.getPost().toUpperCase()));
                 break;
 
             case "company":
-                Collections.sort(everyThing, new Comparator<Storage>() {
-                    public int compare(Storage o1, Storage o2) {
-                        return o1.getCompany().toUpperCase()
-                                .compareTo(o2.getCompany().toUpperCase());
-                    }
-                });
+                Collections.sort(everyThing, (o1, o2) -> o1.getCompany().toUpperCase()
+                        .compareTo(o2.getCompany().toUpperCase()));
                 break;
 
             case "email":
-                Collections.sort(everyThing, new Comparator<Storage>() {
-                    public int compare(Storage o1, Storage o2) {
-                        return o1.getEmail().toUpperCase()
-                                .compareTo(o2.getEmail().toUpperCase());
-                    }
-                });
+                Collections.sort(everyThing, (o1, o2) -> o1.getEmail().toUpperCase()
+                        .compareTo(o2.getEmail().toUpperCase()));
                 break;
         }
 
@@ -234,20 +209,27 @@ public class Executor {
         }
     }
 
-    public void insertElement(String cName, String cPost, String cCompany, String cEmail, String phoneNumbers) {
+    public void insertElement(String[] insertArgs) {
 
         String id = getId();
+        String cName = insertArgs[0];
+        String cPost = insertArgs[1];
+        String cCompany = insertArgs[2];
+        String cEmail = insertArgs[3];
+        String[]phoneNumbers = Arrays.copyOfRange(insertArgs, 4, insertArgs.length);
 
         Element customer = doc.createElement("customer");
         clients.appendChild(customer);
 
         customer.setAttribute("id", id);
 
-        StringTokenizer st = new StringTokenizer(phoneNumbers, ", ");
         ArrayList<String> numbers = new ArrayList<>();
-        while (st.hasMoreTokens()) {
-            numbers.add(st.nextToken());
-        }
+
+//        for (String phoneNumber : phoneNumbers) {
+//            numbers.add(phoneNumber);
+//        }
+        numbers.addAll(Arrays.asList(phoneNumbers));
+
 
         NodeList list = clients.getChildNodes();
         int length = list.getLength();
@@ -279,7 +261,8 @@ public class Executor {
 
         Element phones = doc.createElement("phones");
 
-        if (numbers.toString() == "[]") {
+//        if (numbers.toString() == "[]") {
+        if("[]".equals(numbers.toString())){
             Element phone = doc.createElement("phone");
             phone.appendChild(doc.createTextNode(""));
             phones.appendChild(phone);

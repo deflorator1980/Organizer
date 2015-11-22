@@ -5,6 +5,7 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
+import java.util.Arrays;
 
 
 public class Organizer {
@@ -43,7 +44,8 @@ public class Organizer {
 
             case "-insert":
                 if (length > 5) {
-                    exe.insertElement(args[1], args[2], args[3], args[4], args[5]);
+                    String[] insertArgs = Arrays.copyOfRange(args, 1, args.length);
+                    exe.insertElement(insertArgs);
                     toWrite = true;
                 } else {
                     System.out.println("Enter all arguments ");
