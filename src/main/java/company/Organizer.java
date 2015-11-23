@@ -57,6 +57,9 @@ public class Organizer {
                     if (args[1].equals("-ph")) {
                         if (length > 3) {
                             exe.deleteElement(args[2], args[3]);
+                        }else {
+                            System.out.println("Enter more arguments");
+                            break;
                         }
                     } else exe.deleteElement(args[1]);
                     toWrite = true;

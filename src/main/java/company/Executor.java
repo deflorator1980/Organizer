@@ -332,6 +332,7 @@ public class Executor {
                             }
                         }
                         System.out.println("phone " + phoneDel + " doesn't exist by user " + idUpdate);
+                        System.exit(0);
                     }
                 }
             }
